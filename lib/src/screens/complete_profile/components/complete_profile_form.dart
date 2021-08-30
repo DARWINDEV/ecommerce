@@ -52,7 +52,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
             SizedBox(height: getProportionateScreenHeight(40)),
             GenericButton(text: 'Continue', press: (){
               if(_formKey.currentState!.validate()){
-
+                Navigator.pushNamed(context, 'otp');
               }
             },)
           ],
@@ -95,9 +95,9 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
   Widget lastNameTextForm() {
     return TextFormField(
       keyboardType: TextInputType.name,
-      onSaved: (newValue) => phoneNumber = newValue,
+      onSaved: (newValue) => lastName = newValue,
       decoration: InputDecoration(
-        labelText: 'Phone number',
+        labelText: 'Last name',
         hintText: 'Enter your last name',
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSuffixMethod(
@@ -110,9 +110,9 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
   Widget phoneNumTextForm() {
     return TextFormField(
       keyboardType: TextInputType.number,
-      onSaved: (newValue) => lastName = newValue,
+      onSaved: (newValue) => phoneNumber = newValue,
       decoration: InputDecoration(
-        labelText: 'Last name',
+        labelText: 'Phone number',
         hintText: 'Enter your phone number',
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSuffixMethod(

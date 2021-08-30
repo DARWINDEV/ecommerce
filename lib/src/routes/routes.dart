@@ -6,12 +6,14 @@ import 'package:ecommerce/src/screens/login_success/components/loginSuccess.dart
 import 'package:ecommerce/src/screens/splash/components/splashScreen.dart';
 import 'package:ecommerce/src/screens/sign_up/components/sign_up.dart';
 import 'package:ecommerce/src/screens/sign_in/components/sign_in.dart';
+import 'package:ecommerce/src/screens/otp/components/otp.dart';
 
 final Map<String, WidgetBuilder> routes = {
-  'splashScreen' : (BuildContext context) => SplashScreen(),
-  'signInScreen' : (BuildContext context) => SignInScreen(),
+  'splashScreen'   : (BuildContext context) => SplashScreen(),
+  'signInScreen'   : (BuildContext context) => SignInScreen(),
   'forgotPassword' : (BuildContext context) => ForgotPasswordScreen(),
-  'success' : (BuildContext context) => LoginSuccessScreen(),
-  'signUpScreen' : (BuildContext context) => SignUpScreen(),
-  'completeProfile' : (BuildContext context) => CompleteProfileScreen()
+  'success'        : (BuildContext context) => LoginSuccessScreen(),
+  'signUpScreen'   : (BuildContext context) => SignUpScreen(),
+  'completeProfile' : (BuildContext context) => CompleteProfileScreen(),
+  'otp' : (BuildContext context) => OtpScreen()
 };
