@@ -1,9 +1,10 @@
-import 'package:ecommerce/src/utils/size_config.dart';
 import 'package:flutter/material.dart';
+
+import 'package:ecommerce/src/utils/size_config.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class SocialCard extends StatelessWidget {
-  const SocialCard({
+  SocialCard({
     Key? key, required this.icon, required this.press,
   }) : super(key: key);
   final String icon;

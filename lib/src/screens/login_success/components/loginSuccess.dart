@@ -9,6 +9,6 @@ class LoginSuccessScreen extends StatelessWidget {
       leading: SizedBox(),
       title: (Text("Login Success")),
     ),
-    body: SuccessBody(),);
+    body: SuccessBody());
   }
 }

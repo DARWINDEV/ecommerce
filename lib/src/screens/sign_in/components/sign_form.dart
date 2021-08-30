@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'package:ecommerce/src/widgets/customSuffixMethod.dart';
+import 'package:ecommerce/src/widgets/genericButton.dart';
+import 'package:ecommerce/src/widgets/form_error.dart';
 import 'package:ecommerce/src/utils/size_config.dart';
 import 'package:ecommerce/src/values/constants.dart';
-import 'package:ecommerce/src/widgets/customSuffixMethod.dart';
-import 'package:ecommerce/src/widgets/form_error.dart';
-import 'package:ecommerce/src/widgets/genericButton.dart';
 
 class SignInForm extends StatefulWidget {
   @override
@@ -16,6 +16,20 @@ class _SignInFormState extends State<SignInForm> {
   String? email, password;
   bool remember = false;
   final List<String> errors = [];
+
+  void addError({String? error}){
+    if(!errors.contains(error))
+    setState(() {
+      errors.add(error!);
+    });
+  }
+
+    void removeError({String? error}){
+    if(errors.contains(error))
+    setState(() {
+      errors.remove(error!);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {

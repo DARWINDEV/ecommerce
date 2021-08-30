@@ -1,8 +1,8 @@
-import 'package:ecommerce/src/values/constants.dart';
-import 'package:ecommerce/src/widgets/socialCard.dart';
 import 'package:flutter/material.dart';
 
 import 'package:ecommerce/src/screens/sign_in/components/sign_form.dart';
+import 'package:ecommerce/src/widgets/social_media_container.dart';
+import 'package:ecommerce/src/widgets/new_account.dart';
 import 'package:ecommerce/src/utils/size_config.dart';
 
 class BodySignScreen extends StatelessWidget {
@@ -15,6 +15,7 @@ class BodySignScreen extends StatelessWidget {
           padding:
               EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
           child: SingleChildScrollView(
+            physics: BouncingScrollPhysics(),
             child: Column(
               children: <Widget>[
                 SizedBox(height: SizeConfig.screenHeight! * 0.04,),
@@ -32,37 +33,9 @@ class BodySignScreen extends StatelessWidget {
                 SizedBox(height: SizeConfig.screenHeight! * 0.08,),
                 SignInForm(),
                 SizedBox(height: SizeConfig.screenHeight! * 0.08,),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    SocialCard(
-                      icon: 'assets/icons/google-icon.svg',
-                      press: () {},
-                    ),
-                    SocialCard(
-                      icon: 'assets/icons/facebook-2.svg',
-                      press: () {},
-                    ),
-                    SocialCard(
-                      icon: 'assets/icons/twitter.svg',
-                      press: () {},
-                    ),
-                  ],
-                ),
+                SocialMediaContainer(),
                 SizedBox(height: getProportionateScreenHeight(16),),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text("Don't have an account?",
-                        style: TextStyle(
-                          fontSize: getProportionateScreenWidth(16),
-                        )),
-                    Text("Sign Up",
-                        style: TextStyle(
-                            fontSize: getProportionateScreenWidth(16),
-                            color: kPrimaryColor))
-                  ],
-                )
+                NewAccount()
               ],
             ),
           ),
