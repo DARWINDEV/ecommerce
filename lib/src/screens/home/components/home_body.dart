@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:ecommerce/src/screens/home/components/home.dart';
+import 'package:ecommerce/src/screens/home/home.dart';
 
 
 class HomePage extends StatelessWidget {
