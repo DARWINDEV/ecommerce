@@ -1,8 +1,8 @@
-import 'package:ecommerce/src/models/product.dart';
+import 'package:flutter/material.dart';
+
 import 'package:ecommerce/src/screens/home/components/categories.dart';
 import 'package:ecommerce/src/screens/home/components/header.dart';
 import 'package:ecommerce/src/screens/home/components/popular_products.dart';
-import 'package:flutter/material.dart';
 
 import 'package:ecommerce/src/screens/home/components/saleBanner.dart';
 import 'package:ecommerce/src/screens/home/components/specialOfferCard.dart';
@@ -18,13 +18,13 @@ class HomePageBody extends StatelessWidget {
         children: <Widget>[
           SizedBox(height: getProportionateScreenHeight(20)),
           Header(),
-          SizedBox(height: getProportionateScreenHeight(30)),
+          SizedBox(height: getProportionateScreenWidth(10)),
           SaleBanner(title: 'A Summer Suprise\n', saleText: 'Cashback 20%'),
           SizedBox(height: getProportionateScreenHeight(30)),
           Categories(),
-          SizedBox(height: getProportionateScreenHeight(30)),
+          SizedBox(height: getProportionateScreenWidth(30)),
           SpecialOffertCard(),
-          SizedBox(height: getProportionateScreenHeight(30)),
+          SizedBox(height: getProportionateScreenWidth(30)),
           PopularProducts()
         ],
       ),

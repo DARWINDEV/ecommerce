@@ -20,6 +20,7 @@ class PopularProducts extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           physics: BouncingScrollPhysics(),
           child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ...List.generate(demoProducts.length,
                   (index) => ProductCard(product: demoProducts[index])),

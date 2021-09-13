@@ -1,13 +1,13 @@
-import 'package:ecommerce/src/screens/home/components/home_body.dart';
 import 'package:flutter/cupertino.dart';
 
-import 'package:ecommerce/src/screens/complete_profile/components/complete_profile.dart';
-import 'package:ecommerce/src/screens/forgot_password/components/forgot_password.dart';
-import 'package:ecommerce/src/screens/login_success/components/loginSuccess.dart';
-import 'package:ecommerce/src/screens/splash/components/splashScreen.dart';
-import 'package:ecommerce/src/screens/sign_up/components/sign_up.dart';
-import 'package:ecommerce/src/screens/sign_in/components/sign_in.dart';
-import 'package:ecommerce/src/screens/otp/components/otp.dart';
+import 'package:ecommerce/src/screens/complete_profile/complete_profile.dart';
+import 'package:ecommerce/src/screens/forgot_password/forgot_password.dart';
+import 'package:ecommerce/src/screens/login_success/loginSuccess.dart';
+import 'package:ecommerce/src/screens/home/components/home_body.dart';
+import 'package:ecommerce/src/screens/splash/splashScreen.dart';
+import 'package:ecommerce/src/screens/sign_up/sign_up.dart';
+import 'package:ecommerce/src/screens/sign_in/sign_in.dart';
+import 'package:ecommerce/src/screens/otp/otp.dart';
 
 final Map<String, WidgetBuilder> routes = {
   'splashScreen'   : (BuildContext context) => SplashScreen(),
