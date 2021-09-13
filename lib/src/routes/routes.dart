@@ -1,3 +1,4 @@
+import 'package:ecommerce/src/screens/home/components/home_body.dart';
 import 'package:flutter/cupertino.dart';
 
 import 'package:ecommerce/src/screens/complete_profile/components/complete_profile.dart';
@@ -15,5 +16,6 @@ final Map<String, WidgetBuilder> routes = {
   'success'        : (BuildContext context) => LoginSuccessScreen(),
   'signUpScreen'   : (BuildContext context) => SignUpScreen(),
   'completeProfile' : (BuildContext context) => CompleteProfileScreen(),
-  'otp' : (BuildContext context) => OtpScreen()
+  'otp' : (BuildContext context) => OtpScreen(),
+  'homePage' : (BuildContext context) => HomePage()
 };
