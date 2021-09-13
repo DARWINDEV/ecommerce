@@ -26,7 +26,7 @@ class SuccessBody extends StatelessWidget {
         Spacer(),
         SizedBox(
           width: SizeConfig.screenWidth! * 0.6,
-          child: GenericButton(text: "Back to home", press: (){},),
+          child: GenericButton(text: "Back to home", press: () => Navigator.pushNamed(context, 'homePage')),
         ),
         Spacer()
       ],
